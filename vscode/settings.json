@@ -1,0 +1,37 @@
+{
+  "files.autoSave": "afterDelay",
+  "workbench.colorTheme": "Vim Dark Medium",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[sql]": {},
+  "editor.lineNumbers": "relative",
+  "editor.formatOnSave": true,
+  "workbench.editor.editorActionsLocation": "titleBar",
+  "workbench.editor.showTabs": "none",
+  "window.commandCenter": false,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.associations": {
+    "*.scss": "tailwindcss",
+    "*.css": "tailwindcss"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "mssql.objectExplorer.groupBySchema": true,
+  "mssql.connections": [
+    {
+      "server": "pa200-hw2-db-server.database.windows.net",
+      "database": "hw2db",
+      "authenticationType": "SqlLogin",
+      "user": "Epidural4560",
+      "password": "",
+      "emptyPasswordInput": false,
+      "savePassword": true
+    }
+  ],
+  "python.defaultInterpreterPath": "/Users/dan/Documents/MUNI/pa200/hw2/flask_app/venv"
+
+}
