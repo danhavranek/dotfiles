@@ -3,7 +3,7 @@
 # This script was inspired by https://github.com/CoreyMSchafer/dotfiles.git
 
 # Install VS Code extensions
-./install-extensions.sh
+# ./install-extensions.sh
 
 # Target directory for VS Code user settings on macOS
 VSCODE_USER_SETTINGS_DIR="${HOME}/Library/Application Support/Code/User/"
