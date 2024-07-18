@@ -1,8 +1,16 @@
 #!/bin/bash
 
-# Apply all dotfiles and configurations.
+# Install packages and apply all dotfiles and configurations.
 # Configured for MacOS.
 
+# Install Homebrew package manager
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+brew doctor
+
+# Creak configuration links using stow
+brew install stow
+ 
 stow zsh
 stow git
 stow yazi
