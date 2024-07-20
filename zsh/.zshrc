@@ -98,12 +98,9 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 
-alias l="lsd -la"
-alias ls="lsd"
+alias l="lsd"
 alias ll="lsd -la"
 alias ld="lsd -ld */"
-
-alias cat="bat"
 
 # phpbrew
 [[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
