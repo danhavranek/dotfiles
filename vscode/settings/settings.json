@@ -4,24 +4,26 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": "always",
     "source.fixAll.eslint": "always",
-
     // "source.autoImports": "always",
     "source.organizeImports": "always"
   },
-
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": [":", "w"],
-      "commands": ["workbench.action.files.save"]
+      "before": [
+        ":",
+        "w"
+      ],
+      "commands": [
+        "workbench.action.files.save"
+      ]
     }
   ],
-
+  "latex-workshop.latexindent.path": "latexindent",
   "workbench.colorTheme": "Vim Dark Medium",
   "editor.lineNumbers": "relative",
   "workbench.editor.editorActionsLocation": "titleBar",
   "workbench.editor.showTabs": "none",
   "window.commandCenter": false,
-
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -31,9 +33,12 @@
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
   "files.associations": {
     "*.scss": "tailwindcss",
     "*.css": "tailwindcss"
-  }
+  },
+  "editor.minimap.enabled": false
 }

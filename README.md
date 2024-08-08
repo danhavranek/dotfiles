@@ -1,5 +1,4 @@
 # My dotfiles
-
 Repository containing dotfiles and other configuration for my Mac OS.
 
 ## Requirements
@@ -19,6 +18,8 @@ $ ./install.sh
 ```
 
 ## Future work
+
+- [ ] Add Brewfile and automatic installation of required tools
 
 ## Sources
 
