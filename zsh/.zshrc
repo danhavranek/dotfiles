@@ -115,6 +115,7 @@ bindkey -v
 source <(fzf --zsh)
 
 # Yazi
+# quit into active directory
 function yy() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
 	yazi "$@" --cwd-file="$tmp"
@@ -123,3 +124,8 @@ function yy() {
 	fi
 	rm -f -- "$tmp"
 }
+
+# Python package manager
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
