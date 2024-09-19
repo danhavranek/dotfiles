@@ -1,16 +1,16 @@
 # My dotfiles
+
 Repository containing dotfiles and other configuration for my Mac OS.
 
 ## Requirements
 
 - `git`
-- `stow`
 
 ## Installation
 
 First, check out the dotfiles repo in your $HOME directory using git and then use the install script.
 
-```
+```sh
 $ cd ~
 $ git clone git@github.com:danhavranek/dotfiles.git
 $ cd dotfiles
