@@ -10,10 +10,11 @@ brew doctor
 
 # Creak configuration links using stow
 brew install stow
- 
+
 stow zsh
 stow git
 stow yazi
+stow nvim
 stow zed
 stow karabiner
 
