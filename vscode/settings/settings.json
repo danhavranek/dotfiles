@@ -9,13 +9,8 @@
   },
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": [
-        ":",
-        "w"
-      ],
-      "commands": [
-        "workbench.action.files.save"
-      ]
+      "before": [":", "w"],
+      "commands": ["workbench.action.files.save"]
     }
   ],
   "latex-workshop.latexindent.path": "latexindent",
@@ -40,5 +35,6 @@
     "*.scss": "tailwindcss",
     "*.css": "tailwindcss"
   },
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "workbench.activityBar.location": "bottom"
 }
