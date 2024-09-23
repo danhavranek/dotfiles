@@ -14,7 +14,7 @@
     }
   ],
   "latex-workshop.latexindent.path": "latexindent",
-  "workbench.colorTheme": "Vim Dark Medium",
+  "workbench.colorTheme": "Gruvbox Material Dark",
   "editor.lineNumbers": "relative",
   "workbench.editor.editorActionsLocation": "titleBar",
   "workbench.editor.showTabs": "none",
