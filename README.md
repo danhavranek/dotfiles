@@ -20,6 +20,7 @@ $ ./install.sh
 ## Future work
 
 - [ ] Add Brewfile and automatic installation of required tools
+- [ ] Add mac defaults
 
 ## Sources
 
