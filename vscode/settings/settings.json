@@ -36,5 +36,8 @@
     "*.css": "tailwindcss"
   },
   "editor.minimap.enabled": false,
-  "workbench.activityBar.location": "bottom"
+  "workbench.activityBar.location": "bottom",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
