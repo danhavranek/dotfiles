@@ -10,6 +10,10 @@ keymap = [
 ]
 
 [manager]
-prepend_keymap = [{ on = ["y"], run = ['''
+prepend_keymap = [
+    { on = ["y"], run = ['''
 	shell 'cb cp "$@"' --confirm
-    ''', "yank"], desc = "Copy to clipboard" }]
+    ''', "yank"], desc = "Copy to clipboard" },
+    { on   = [ "g", "i" ], run  = "plugin lazygit", desc = "run lazygit" }
+]
+
