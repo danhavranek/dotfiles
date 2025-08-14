@@ -1,13 +1,42 @@
+# Navigation
+setopt auto_cd
+
+alias -g ...='../..'
+alias -g ....='../../..'
+alias -g .....='../../../..'
+alias -g ......='../../../../..'
+
+# Git
+alias g='git'
+alias ga='git add'
+alias gaa='git add --all'
+alias gb='git branch'
+alias gba='git branch --all'
+alias gc='git commit --verbose'
+alias gco='git checkout'
+alias gsw='git switch'
+alias gswc='git switch --create'
+alias gd='git diff'
+alias gf='git fetch'
+alias glog='git log --oneline --decorate --graph'
+alias gloga='git log --oneline --decorate --graph --all'
+alias gm='git merge'
+alias gl='git pull'
+alias gp='git push'
+alias gst='git status'
+alias gss='git status --short'
+
+
+# Use vim keys in tab complete menu:
+# bindkey -M menuselect 'h' vi-backward-char
+# bindkey -M menuselect 'k' vi-up-line-or-history
+# bindkey -M menuselect 'l' vi-forward-char
+# bindkey -M menuselect 'j' vi-down-line-or-history
+# bindkey -v '^?' backward-delete-char
+
 # vi mode
 bindkey -v
 export KEYTIMEOUT=1
-
-# Use vim keys in tab complete menu:
-bindkey -M menuselect 'h' vi-backward-char
-bindkey -M menuselect 'k' vi-up-line-or-history
-bindkey -M menuselect 'l' vi-forward-char
-bindkey -M menuselect 'j' vi-down-line-or-history
-bindkey -v '^?' backward-delete-char
 
 # Change cursor shape for different vi modes.
 function zle-keymap-select {
@@ -48,7 +77,7 @@ function yy() {
 	rm -f -- "$tmp"
 }
 
-
+# LSD aliases
 alias l="lsd --group-directories-first"
 alias ll="lsd -la --group-directories-first"
 alias ld="lsd -ld */"
@@ -70,3 +99,7 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 # Open markdown in MarkText from CLI
 alias marktext="/Applications/MarkText.app/Contents/MacOS/MarkText"
 
+
+# ============================================
+# Starship (have to be at the end of this file)
+eval "$(starship init zsh)"
