@@ -9,11 +9,23 @@ keymap = [
     ], run = "arrow 1", desc = "Move cursor down" },
 ]
 
-[manager]
+[mgr]
 prepend_keymap = [
-    { on = ["y"], run = ['''
-	shell 'cb cp "$@"' --confirm
-    ''', "yank"], desc = "Copy to clipboard" },
-    { on   = [ "g", "i" ], run  = "plugin lazygit", desc = "run lazygit" }
+    { on = [
+        "g",
+        "i",
+    ], run = "plugin lazygit", desc = "run lazygit" },
+    { on = [
+        "M",
+    ], run = "plugin mount", desc = "run mount" },
+    { on = [
+        "<C-y>",
+    ], run = "plugin system-clipboard", desc = "run system-clipboard" },
+    { on = [
+        "C",
+    ], run = "plugin ouch", desc = "Compress with ouch" },
+    # copy to system clipboard on yank
+    # { on = ["y"], run = ['''
+    # shell 'cb cp "$@"' --confirm
+    #    ''', "yank"], desc = "Copy to clipboard" },
 ]
-

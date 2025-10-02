@@ -19,3 +19,6 @@ stow zed
 stow karabiner
 
 ./vscode/install.sh
+
+# Starship
+brew install starship

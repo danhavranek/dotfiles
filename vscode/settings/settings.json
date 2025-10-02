@@ -13,7 +13,57 @@
       "commands": ["workbench.action.files.save"]
     }
   ],
-  "latex-workshop.latexindent.path": "latexindent",
+  // LaTex
+  // "latex-workshop.latex.tools": [
+  //   {
+  //     "name": "latexmk",
+  //     "command": "latexmk",
+  //     "args": [
+  //       "-synctex=1",
+  //       "-interaction=nonstopmode",
+  //       "-file-line-error",
+  //       "-pdf",
+  //       "-outdir=%OUTDIR%",
+  //       "%DOC%"
+  //     ],
+  //     "env": {
+  //       "PATH": "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin"
+  //     }
+  //   },
+  // ],
+  // "latex-workshop.latex.recipes": [
+  //   {
+  //     "name": "latexmk 🔃",
+  //     "tools": [
+  //       "latexmk"
+  //     ],
+  //   },
+  // ],
+  "latex-workshop.latex.clean.fileTypes": [
+      "*.aux",
+      "*.bbl",
+      "*.blg",
+      "*.idx",
+      "*.ind",
+      "*.lof",
+      "*.lot",
+      "*.out",
+      "*.toc",
+      "*.acn",
+      "*.acr",
+      "*.alg",
+      "*.glg",
+      "*.glo",
+      "*.gls",
+      "*.ist",
+      "*.fls",
+      "*.log",
+      "*.fdb_latexmk",
+      "*.snm",
+      "*.nav",
+  ],
+  "latex-workshop.formatting.latex": "latexindent",
+
   "workbench.colorTheme": "Gruvbox Material Dark",
   "editor.lineNumbers": "relative",
   "workbench.editor.editorActionsLocation": "titleBar",
@@ -42,5 +92,8 @@
   },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
-  }
+  },
+  "workbench.startupEditor": "none",
+  "editor.renderWhitespace": "all",
+  "blade.format.enable": true, 
 }

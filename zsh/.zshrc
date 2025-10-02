@@ -27,15 +27,19 @@ alias gst='git status'
 alias gss='git status --short'
 
 
-# Use vim keys in tab complete menu:
-# bindkey -M menuselect 'h' vi-backward-char
-# bindkey -M menuselect 'k' vi-up-line-or-history
-# bindkey -M menuselect 'l' vi-forward-char
-# bindkey -M menuselect 'j' vi-down-line-or-history
-# bindkey -v '^?' backward-delete-char
+# Use vim keys in tab complete menu
+autoload -Uz compinit
+compinit
+zmodload zsh/complist
+
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'l' vi-forward-char
+bindkey -M menuselect 'j' vi-down-line-or-history
 
 # vi mode
 bindkey -v
+bindkey -v '^?' backward-delete-char
 export KEYTIMEOUT=1
 
 # Change cursor shape for different vi modes.
@@ -90,15 +94,14 @@ export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
-# Load zsh-syntax-highlighting; should be last
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 # Composer global
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 
 # Open markdown in MarkText from CLI
 alias marktext="/Applications/MarkText.app/Contents/MacOS/MarkText"
 
+# Load zsh-syntax-highlighting; should be last
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # ============================================
 # Starship (have to be at the end of this file)

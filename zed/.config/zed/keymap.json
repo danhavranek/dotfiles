@@ -2,7 +2,7 @@
   {
     "bindings": {
       "ctrl-j": "menu::SelectNext",
-      "ctrl-k": "menu::SelectPrev"
+      "ctrl-k": "menu::SelectPrevious"
     }
   }
 ]

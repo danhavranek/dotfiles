@@ -37,5 +37,21 @@
     "key": "ctrl+k",
     "command": "workbench.action.quickOpenSelectPrevious",
     "when": "inQuickOpen"
+  },
+  // SQLtools
+  {
+    "key": "cmd+r",
+    "command": "sqltools.executeQueryFromFile",
+    "when": "editorTextFocus && editorLangId == 'sql'",
+  },
+  {
+    "key": "cmd+r",
+    "command": "sqltools.executeQuery",
+    "when": "editorTextFocus && editorLangId == 'sql' && editorHasSelection == true",
+  },
+  {
+    "key": "cmd+shift+r",
+    "command": "sqltools.executeCurrentQuery",
+    "when": "editorTextFocus && editorLangId == 'sql'",
   }
 ]
