@@ -1260,7 +1260,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>FiraMonoNFM-Regular 14</string>
+			<string>0xProtoNFM-Regular 14</string>
 			<key>Open Toolbelt</key>
 			<false/>
 			<key>Option Key Sends</key>
