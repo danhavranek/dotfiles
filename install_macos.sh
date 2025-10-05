@@ -3,6 +3,8 @@
 # Install packages and apply all dotfiles and configurations.
 # Configured for MacOS.
 
+./set_macos.sh
+
 # Install Homebrew package manager
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
