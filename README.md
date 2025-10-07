@@ -1,6 +1,6 @@
 # My dotfiles
 
-Repository containing dotfiles and other configuration for my Mac OS.
+Repository containing dotfiles and configuration of my Mac OS.
 
 ## Requirements
 
