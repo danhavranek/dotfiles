@@ -47,6 +47,10 @@ defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 # defaults write NSGlobalDomain KeyRepeat -int 1
 # defaults write NSGlobalDomain InitialKeyRepeat -int 10
 
+# Disable text changing
+defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
+defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
+
 ###############################################################################
 # Finder                                                                      #
 ###############################################################################
@@ -76,6 +80,12 @@ defaults write com.apple.finder ShowStatusBar -bool true
 
 # Finder: show path bar
 defaults write com.apple.finder ShowPathbar -bool true
+
+# Keep folders on top
+defaults write com.apple.finder "_FXSortFoldersFirst" -bool "true"
+
+# Toolbar title rollover delay
+defaults write NSGlobalDomain "NSToolbarTitleViewRolloverDelay" -float "0"
 
 # When performing a search, search the current folder by default
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
@@ -142,5 +152,15 @@ defaults write com.apple.dock showhidden -bool true
 
 # Don’t show recent applications in Dock
 defaults write com.apple.dock show-recents -bool false
+
+###############################################################################
+# Apps
+###############################################################################
+
+# TextEdit plain text
+defaults write com.apple.TextEdit "RichText" -bool "false"
+
+# Deactivate Apple Intelligence
+defaults write com.apple.CloudSubscriptionFeatures.optIn "545129924" -bool "false"
 
 echo "Done. Note that some of these changes require a logout/restart to take effect."
