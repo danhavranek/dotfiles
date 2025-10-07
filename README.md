@@ -1,6 +1,6 @@
 # My dotfiles
 
-Repository containing dotfiles and other configuration for my Mac OS.
+Repository containing dotfiles and configuration of my Mac OS.
 
 ## Requirements
 
@@ -8,7 +8,7 @@ Repository containing dotfiles and other configuration for my Mac OS.
 
 ## Installation
 
-First, check out the dotfiles repo in your $HOME directory using git and then use the install script.
+First, clone the repo into your $HOME directory using git and then use the install script.
 
 ```sh
 $ cd ~
