@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Ispired by https://github.com/kevinSuttle/macOS-Defaults
+# Ispired by https://github.com/kevinSuttle/macOS-Defaults and https://macos-defaults.com/
 
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
