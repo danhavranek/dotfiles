@@ -7,8 +7,28 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "gutter": {
+    "line_numbers": true
+  },
+  "minimap": {
+    "show": "never"
+  },
+  "show_whitespaces": "all",
+  "file_types": {
+    "tailwindcss": ["*.scss", "*.css"]
+  },
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)"
+  },
+  "base_keymap": "VSCode",
   "show_edit_predictions": false,
-  "theme": "Gruvbox Material",
+  "theme": {
+    "mode": "dark",
+    "light": "Gruvbox Material",
+    "dark": "Gruvbox Dark"
+  },
   "languages": {
     "Markdown": {
       "show_edit_predictions": false
