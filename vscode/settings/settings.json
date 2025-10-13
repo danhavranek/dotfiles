@@ -40,27 +40,27 @@
   //   },
   // ],
   "latex-workshop.latex.clean.fileTypes": [
-      "*.aux",
-      "*.bbl",
-      "*.blg",
-      "*.idx",
-      "*.ind",
-      "*.lof",
-      "*.lot",
-      "*.out",
-      "*.toc",
-      "*.acn",
-      "*.acr",
-      "*.alg",
-      "*.glg",
-      "*.glo",
-      "*.gls",
-      "*.ist",
-      "*.fls",
-      "*.log",
-      "*.fdb_latexmk",
-      "*.snm",
-      "*.nav",
+    "*.aux",
+    "*.bbl",
+    "*.blg",
+    "*.idx",
+    "*.ind",
+    "*.lof",
+    "*.lot",
+    "*.out",
+    "*.toc",
+    "*.acn",
+    "*.acr",
+    "*.alg",
+    "*.glg",
+    "*.glo",
+    "*.gls",
+    "*.ist",
+    "*.fls",
+    "*.log",
+    "*.fdb_latexmk",
+    "*.snm",
+    "*.nav"
   ],
   "latex-workshop.formatting.latex": "latexindent",
 
@@ -95,5 +95,22 @@
   },
   "workbench.startupEditor": "none",
   "editor.renderWhitespace": "all",
-  "blade.format.enable": true, 
+  "blade.format.enable": true,
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // golang
+  "[go]": {
+    "editor.formatOnSave": true
+  },
+  "go.useLanguageServer": true,
+  "go.lintTool": "golangci-lint-v2",
+  // "go.lintFlags": ["--path-mode=abs", "--fast-only"],
+  "go.formatTool": "custom",
+  "go.alternateTools": {
+    "customFormatter": "golangci-lint-v2"
+  },
+  "go.formatFlags": ["fmt", "--stdin"],
+  "git.blame.editorDecoration.enabled": false
 }
