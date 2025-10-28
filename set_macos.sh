@@ -165,4 +165,7 @@ defaults write com.apple.TextEdit "RichText" -bool "false"
 # Deactivate Apple Intelligence
 defaults write com.apple.CloudSubscriptionFeatures.optIn "545129924" -bool "false"
 
+# VSCode key repeat
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+
 echo "Done. Note that some of these changes require a logout/restart to take effect."
