@@ -27,7 +27,7 @@
   "theme": {
     "mode": "dark",
     "light": "Gruvbox Material",
-    "dark": "Gruvbox Dark"
+    "dark": "Gruvbox Material"
   },
   "languages": {
     "Markdown": {
@@ -48,7 +48,8 @@
   },
   "toolbar": {
     "breadcrumbs": true,
-    "quick_actions": false
+    "quick_actions": false,
+    "selections_menu": false
   },
   "format_on_save": "on",
   "autosave": {
