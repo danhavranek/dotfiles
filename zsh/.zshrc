@@ -106,3 +106,9 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # ============================================
 # Starship (have to be at the end of this file)
 eval "$(starship init zsh)"
+
+# If you want to use Homebrew as a different user, uncomment the following alias
+# and replace [brew_user] with the user that installed brew on this system.
+# See https://www.codejam.info/2021/11/homebrew-multi-user.html for expanation.
+# alias brew='sudo -Hu [brew_user] brew'
+

@@ -8,8 +8,6 @@
 # Install Homebrew package manager
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-./set_multiuser_brew.sh
-
 brew doctor
 
 # Creak configuration links using stow
