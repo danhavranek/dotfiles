@@ -4,6 +4,7 @@ th.git.deleted_sign = "D"
 
 require("git"):setup()
 require("starship"):setup()
+require("relative-motions"):setup({ show_numbers = "relative", show_motion = true })
 
 -- Rounded border
 require("full-border"):setup({
