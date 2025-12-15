@@ -15,6 +15,10 @@ prepend_keymap = [
         "g",
         "i",
     ], run = "plugin lazygit", desc = "run lazygit" },
+  	{ on = [
+  	   'g',
+  	   'r',
+  	 ], run = 'plugin cd-git-root', desc = 'Go to git repo root' },
     { on = [
         "M",
     ], run = "plugin mount", desc = "run mount" },
