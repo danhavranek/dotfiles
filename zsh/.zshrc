@@ -100,6 +100,12 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 # Open markdown in MarkText from CLI
 alias marktext="/Applications/MarkText.app/Contents/MacOS/MarkText"
 
+# Node version manager
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 # Load zsh-syntax-highlighting; should be last
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
