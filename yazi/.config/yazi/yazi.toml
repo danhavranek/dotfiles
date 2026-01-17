@@ -2,9 +2,9 @@
 show_hidden = true
 
 [opener]
-# play = [
-#   { run = 'ffplay "$@"', orphan = true, desc = "test" }
-# ]
+play = [
+	{ run = 'iina "$@"', block = true, for = "macos" },
+]
 edit = [
 	{ run = 'nvim "$@"', block = true },
 	{ run = 'marktext -n "$@"', orphan = true },
