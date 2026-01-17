@@ -9,3 +9,4 @@ stow yazi
 stow nvim
 stow zed
 stow karabiner
+stow hushlogin
