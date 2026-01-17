@@ -1,0 +1,43 @@
+######## Options ########
+
+font-family = "0xProto Nerd Font Mono"
+font-style = regular
+font-size = 14
+font-thicken = true
+
+theme = "Gruvbox Dark"
+
+window-width = 112
+window-height = 32
+
+window-padding-x = 14
+
+window-show-tab-bar = never
+
+quick-terminal-position = right
+quick-terminal-size = 800px
+
+macos-window-buttons = hidden
+macos-titlebar-style = tabs
+
+auto-update = download
+
+######## KEY BINDINGS ########
+
+keybind = global:cmd+semicolon=toggle_quick_terminal
+
+keybind = cmd+l=next_tab
+keybind = cmd+h=previous_tab
+
+keybind = cmd+shift+l=move_tab:1
+keybind = cmd+shift+h=move_tab:-1
+
+keybind = cmd+k=scroll_page_lines:-3
+keybind = cmd+j=scroll_page_lines:3
+
+keybind = cmd+u=scroll_page_up
+keybind = cmd+d=scroll_page_down
+
+keybind = cmd+g=scroll_to_top
+keybind = cmd+shift+g=scroll_to_bottom
+

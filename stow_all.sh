@@ -4,6 +4,7 @@
 
 stow zsh
 stow git
+stow ghostty
 stow yazi
 stow nvim
 stow zed
