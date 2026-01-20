@@ -5,7 +5,7 @@ font-style = regular
 font-size = 14
 font-thicken = true
 
-theme = deus-default
+theme = gruvbox-material-hard-dark
 
 window-width = 112
 window-height = 32
