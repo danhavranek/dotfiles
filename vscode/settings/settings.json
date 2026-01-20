@@ -64,7 +64,7 @@
   ],
   "latex-workshop.formatting.latex": "latexindent",
 
-  "workbench.colorTheme": "Gruvbox Material Dark",
+  "workbench.colorTheme": "Vim Dark Hard",
   "editor.lineNumbers": "relative",
   "workbench.editor.editorActionsLocation": "titleBar",
   "workbench.editor.showTabs": "none",
