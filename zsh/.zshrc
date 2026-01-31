@@ -90,9 +90,9 @@ alias ld="lsd -ld */"
 [[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
 
 # Python version manager
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+# export PYENV_ROOT="$HOME/.pyenv"
+# [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init -)"
 
 # Composer global
 export PATH="$HOME/.composer/vendor/bin:$PATH"
@@ -108,6 +108,9 @@ export NVM_DIR="$HOME/.nvm"
 
 # Load zsh-syntax-highlighting; should be last
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Homebrew binaries priority
+export PATH="/opt/homebrew/bin:$PATH"
 
 # ============================================
 # Starship (have to be at the end of this file)
