@@ -7,55 +7,74 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "terminal": {
+    "font_family": "0xProto Nerd Font"
+  },
+  "vim": {
+    "use_system_clipboard": "always",
+  },
+  "collaboration_panel": {
+    "button": false,
+  },
+  "outline_panel": {
+    "button": false,
+  },
+  "git_panel": {
+    "dock": "right",
+  },
+  "buffer_font_family": "Menlo",
+  "buffer_line_height": "comfortable",
+  "agent_ui_font_size": 13.0,
+  "project_panel": {
+    "default_width": 500.0,
+    "dock": "right",
+  },
+  "ui_font_family": "0xProto Nerd Font",
   "gutter": {
-    "line_numbers": true
+    "line_numbers": true,
   },
   "minimap": {
-    "show": "never"
+    "show": "never",
   },
   "show_whitespaces": "all",
   "file_types": {
-    "tailwindcss": ["*.scss", "*.css"]
+    "tailwindcss": ["*.scss", "*.css"],
   },
   "icon_theme": {
     "mode": "dark",
     "light": "Zed (Default)",
-    "dark": "Zed (Default)"
+    "dark": "Zed (Default)",
   },
   "base_keymap": "VSCode",
   "show_edit_predictions": false,
-  "theme": {
-    "mode": "dark",
-    "light": "Gruvbox Material",
-    "dark": "Gruvbox Material"
-  },
+  "theme": "Gruvbox Material",
   "languages": {
     "Markdown": {
-      "show_edit_predictions": false
-    }
+      "show_edit_predictions": false,
+    },
   },
   "vim_mode": true,
-  "ui_font_size": 15,
-  "buffer_font_size": 14,
+  "ui_font_size": 14.0,
+  "buffer_font_size": 12.0,
   "buffer_font_weight": 500,
-  "relative_line_numbers": true,
+  "relative_line_numbers": "enabled",
   "telemetry": {
     "diagnostics": false,
-    "metrics": false
+    "metrics": false,
   },
   "tab_bar": {
-    "show": false
+    "show": false,
   },
   "toolbar": {
     "breadcrumbs": true,
     "quick_actions": false,
-    "selections_menu": false
+    "selections_menu": false,
   },
   "format_on_save": "on",
   "autosave": {
     "after_delay": {
-      "milliseconds": 1000
-    }
+      "milliseconds": 1000,
+    },
   },
-  "restore_on_startup": "none"
+  "restore_on_startup": "launchpad",
 }
