@@ -1,8 +1,8 @@
 ######## Options ########
 
-font-family = "0xProto Nerd Font Mono"
+font-family = "Menlo, monospace"
 font-style = regular
-font-size = 14
+font-size = 13
 font-thicken = true
 
 theme = gruvbox-material-hard-dark
