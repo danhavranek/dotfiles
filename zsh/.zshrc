@@ -26,6 +26,8 @@ alias gp='git push'
 alias gst='git status'
 alias gss='git status --short'
 
+# Well being
+alias fajront='exit'
 
 # Use vim keys in tab complete menu
 autoload -Uz compinit
