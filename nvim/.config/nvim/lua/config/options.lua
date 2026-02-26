@@ -8,9 +8,6 @@ vim.opt.clipboard = { "unnamed", "unnamedplus" }
 -- vim.g.snacks_animate = false
 vim.g.snacks_animate_scroll = false
 
--- Modal background
-vim.o.winblend = 0
-vim.o.pumblend = 0
-
 -- Color scheme
 vim.g.gruvbox_material_background = "hard"
+vim.g.gruvbox_material_float_style = "blend"
