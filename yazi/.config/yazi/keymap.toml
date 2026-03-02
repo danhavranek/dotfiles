@@ -1,50 +1,75 @@
 [completion]
 
 keymap = [
-    { on = [
-        "<C-k>",
-    ], run = "arrow -1", desc = "Move cursor up" },
-    { on = [
-        "<C-j>",
-    ], run = "arrow 1", desc = "Move cursor down" },
+  { on = [
+    "<C-k>",
+  ], run = "arrow -1", desc = "Move cursor up" },
+  { on = [
+    "<C-j>",
+  ], run = "arrow 1", desc = "Move cursor down" },
 ]
 
 [mgr]
 prepend_keymap = [
-    { on = [
-        "g",
-        "i",
-    ], run = "plugin lazygit", desc = "run lazygit" },
-  	{ on = [
-  	   'g',
-  	   'r',
-  	 ], run = 'plugin cd-git-root', desc = 'Go to git repo root' },
-    { on = [
-        "M",
-    ], run = "plugin mount", desc = "run mount" },
-    { on = [
-        "<C-y>",
-    ], run = "plugin system-clipboard", desc = "run system-clipboard" },
-    { on = [
-        "C",
-    ], run = "plugin ouch", desc = "Compress with ouch" },
-    # { on = [
-    #    "m",
-    # ], run = "plugin relative-motions", desc = "Trigger a new relative motion" },
-    # copy to system clipboard on yank
-    # { on = ["y"], run = ['''
-    # shell 'cb cp "$@"' --confirm
-    #    ''', "yank"], desc = "Copy to clipboard" },
+  { on = [
+    "g",
+    "i",
+  ], run = "plugin lazygit", desc = "run lazygit" },
+  { on = [
+    'g',
+    'r',
+  ], run = 'plugin cd-git-root', desc = 'Go to git repo root' },
+  { on = [
+    'g',
+    '.',
+  ], run = 'cd ~/dotfiles', desc = 'Go ~/dotfiles' },
+  { on = [
+    'g',
+    'D',
+  ], run = 'cd ~/Documents', desc = 'Go ~/Documents' },
+  { on = [
+    "M",
+  ], run = "plugin mount", desc = "run mount" },
+  { on = [
+    "<C-y>",
+  ], run = "plugin system-clipboard", desc = "run system-clipboard" },
+  { on = [
+    "C",
+  ], run = "plugin ouch", desc = "Compress with ouch" },
+  # { on = [
+  #    "m",
+  # ], run = "plugin relative-motions", desc = "Trigger a new relative motion" },
+  # copy to system clipboard on yank
+  # { on = ["y"], run = ['''
+  # shell 'cb cp "$@"' --confirm
+  #    ''', "yank"], desc = "Copy to clipboard" },
 
-    # relative motions
-    { on = [ "1" ], run = "plugin relative-motions 1", desc = "Move in relative steps" },
-    { on = [ "2" ], run = "plugin relative-motions 2", desc = "Move in relative steps" },
-    { on = [ "3" ], run = "plugin relative-motions 3", desc = "Move in relative steps" },
-    { on = [ "4" ], run = "plugin relative-motions 4", desc = "Move in relative steps" },
-    { on = [ "5" ], run = "plugin relative-motions 5", desc = "Move in relative steps" },
-    { on = [ "6" ], run = "plugin relative-motions 6", desc = "Move in relative steps" },
-    { on = [ "7" ], run = "plugin relative-motions 7", desc = "Move in relative steps" },
-    { on = [ "8" ], run = "plugin relative-motions 8", desc = "Move in relative steps" },
-    { on = [ "9" ], run = "plugin relative-motions 9", desc = "Move in relative steps" },
+  # relative motions
+  { on = [
+    "1",
+  ], run = "plugin relative-motions 1", desc = "Move in relative steps" },
+  { on = [
+    "2",
+  ], run = "plugin relative-motions 2", desc = "Move in relative steps" },
+  { on = [
+    "3",
+  ], run = "plugin relative-motions 3", desc = "Move in relative steps" },
+  { on = [
+    "4",
+  ], run = "plugin relative-motions 4", desc = "Move in relative steps" },
+  { on = [
+    "5",
+  ], run = "plugin relative-motions 5", desc = "Move in relative steps" },
+  { on = [
+    "6",
+  ], run = "plugin relative-motions 6", desc = "Move in relative steps" },
+  { on = [
+    "7",
+  ], run = "plugin relative-motions 7", desc = "Move in relative steps" },
+  { on = [
+    "8",
+  ], run = "plugin relative-motions 8", desc = "Move in relative steps" },
+  { on = [
+    "9",
+  ], run = "plugin relative-motions 9", desc = "Move in relative steps" },
 ]
-
