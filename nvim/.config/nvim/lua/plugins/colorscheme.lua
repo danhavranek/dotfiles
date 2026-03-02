@@ -5,9 +5,8 @@ return {
     priority = 1000,
   },
   {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "gruvbox-material",
-    },
+    "EdenEast/nightfox.nvim",
+    lazy = false,
+    priority = 1000,
   },
 }
