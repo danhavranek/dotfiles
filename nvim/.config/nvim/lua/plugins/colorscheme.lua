@@ -1,8 +1,11 @@
 return {
   {
     "sainnhe/gruvbox-material",
-    lazy = false,
     priority = 1000,
+    lazy = false,
+    config = function()
+      vim.cmd.colorscheme("gruvbox-material")
+    end,
   },
   {
     "EdenEast/nightfox.nvim",
