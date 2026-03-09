@@ -1,16 +1,12 @@
-[completion]
-
-keymap = [
+[mgr]
+prepend_keymap = [
   { on = [
     "<C-k>",
   ], run = "arrow -1", desc = "Move cursor up" },
   { on = [
     "<C-j>",
   ], run = "arrow 1", desc = "Move cursor down" },
-]
-
-[mgr]
-prepend_keymap = [
+  { on = "<Enter>", run = "enter", desc = "Enter the child directory" },
   { on = [
     "g",
     "i",
