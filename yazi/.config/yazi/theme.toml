@@ -1,3 +1,5 @@
 [flavor]
-use = "gruvbox-dark"
+# dark = "gruvbox-material"
 
+[indicator]
+padding = { open = "█", close = "█" }

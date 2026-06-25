@@ -10,7 +10,7 @@ prepend_keymap = [
   { on = [
     "g",
     "i",
-  ], run = "plugin lazygit", desc = "run lazygit" },
+  ], run = "plugin lazygit", desc = "Run lazygit" },
   { on = [
     'g',
     'r',
@@ -25,22 +25,24 @@ prepend_keymap = [
   ], run = 'cd ~/Documents', desc = 'Go ~/Documents' },
   { on = [
     "M",
-  ], run = "plugin mount", desc = "run mount" },
-  { on = [
-    "<C-y>",
-  ], run = "plugin system-clipboard", desc = "run system-clipboard" },
+  ], run = "plugin mount", desc = "Run mount" },
   { on = [
     "C",
   ], run = "plugin ouch", desc = "Compress with ouch" },
-  # { on = [
-  #    "m",
-  # ], run = "plugin relative-motions", desc = "Trigger a new relative motion" },
-  # copy to system clipboard on yank
-  # { on = ["y"], run = ['''
-  # shell 'cb cp "$@"' --confirm
-  #    ''', "yank"], desc = "Copy to clipboard" },
+  { on = [
+    "c",
+    "r",
+  ], run = "plugin path-from-root", desc = "Copies path from git root" },
+  { on = [
+    "y",
+  ], run = [
+    "yank",
+    'plugin clipboard -- --action=copy',
+  ], desc = 'Copy yanked files to the system clipboard' },
+  { on = [
+    "p",
+  ], run = 'plugin clipboard -- --action=paste', desc = 'Paste files from the system clipboard into the current directory' },
 
-  # relative motions
   { on = [
     "1",
   ], run = "plugin relative-motions 1", desc = "Move in relative steps" },
