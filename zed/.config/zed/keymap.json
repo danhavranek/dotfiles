@@ -2,7 +2,13 @@
   {
     "bindings": {
       "ctrl-j": "menu::SelectNext",
-      "ctrl-k": "menu::SelectPrevious"
-    }
-  }
+      "ctrl-k": "menu::SelectPrevious",
+    },
+  },
+  {
+    "context": "vim_mode == normal || vim_mode == visual",
+    "bindings": {
+      "g w": "vim::HelixJumpToWord",
+    },
+  },
 ]
