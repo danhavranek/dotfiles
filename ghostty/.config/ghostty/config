@@ -2,7 +2,7 @@
 
 font-family = "Menlo, monospace"
 font-style = regular
-font-size = 13
+font-size = 12
 font-thicken = true
 
 theme = gruvbox-material-hard-dark
