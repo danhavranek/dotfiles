@@ -4,14 +4,13 @@ show_hidden = true
 [opener]
 play = [{ run = 'iina "$@"', block = true, for = "macos" }]
 edit = [
-  { run = 'nvim "$@"', block = true },
-  { run = 'marktext -n "$@"', orphan = true },
-  { run = 'code "$@"', orphan = true },
-  { run = 'zed "$@"', orphan = true },
+  { run = 'nvim "%s1"', block = true },
+  { run = 'code "%s1"', orphan = true },
+  { run = 'zed "%s1"', orphan = true },
+  { run = '/Applications/MarkText.app/Contents/MacOS/MarkText "%s1"', orphan = true, for = "macos", desc = "MarkText" },
 ]
 extract = [
-  { run = 'ouch d -y %*', desc = "Extract here with ouch", for = "windows" },
-  { run = 'ouch d -y "$@"', desc = "Extract here with ouch", for = "unix" },
+  { run = 'ouch d -y "%s1"', desc = "Extract here with ouch", for = "unix" },
 ]
 open = [{ run = "open %s1", desc = "Open" }]
 

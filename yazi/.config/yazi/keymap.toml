@@ -24,6 +24,10 @@ prepend_keymap = [
     'D',
   ], run = 'cd ~/Documents', desc = 'Go ~/Documents' },
   { on = [
+    'g',
+    'P',
+  ], run = 'cd ~/Projects', desc = 'Go ~/Projects' },
+  { on = [
     "M",
   ], run = "plugin mount", desc = "Run mount" },
   { on = [
@@ -40,8 +44,10 @@ prepend_keymap = [
     'plugin clipboard -- --action=copy',
   ], desc = 'Copy yanked files to the system clipboard' },
   { on = [
-    "p",
-  ], run = 'plugin clipboard -- --action=paste', desc = 'Paste files from the system clipboard into the current directory' },
+    "<C-p>",
+  ], run = [
+    'plugin clipboard -- --action=paste',
+  ], desc = 'Paste files from the system clipboard into the current directory' },
 
   { on = [
     "1",
